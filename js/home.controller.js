@@ -52,6 +52,10 @@ app.controller('homeController',['$http','$scope',($http,$scope)=>{
                 return 0;
             }
             _('eerrr');
+            document.querySelector('#telefone').textContent = "";
+            document.querySelector('#identificao').textContent = "";
+            document.querySelector('#destino').textContent = "";
+
             return 0;
         });
     }
