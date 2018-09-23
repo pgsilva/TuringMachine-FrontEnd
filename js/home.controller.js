@@ -14,8 +14,9 @@ app.controller('homeController',['$http','$scope',($http,$scope)=>{
         _($scope.json2send);
         $scope.celulas =[];
         $scope.json2send ='';
-        $scope.show=true;
-
+        // $scope.show=true;
+        //  $scope.responses.length;
+        // document.querySelector('#tam').textContent = angular.toJson($scope.responses[$scope.responses.length - 1]);
     }
 
     $scope.geraJson=(str)=>{
@@ -42,6 +43,16 @@ app.controller('homeController',['$http','$scope',($http,$scope)=>{
             _(response.data);
             $scope.responses.push(response.data);
             localStorage.setItem('response', angular.toJson(response.data));
+            //  document.querySelector('#tam').textContent = angular.toJson(response.data)
+            document.querySelector('#msg').textContent =response.data.msg;
+            if ('discagem incorreta' !== response.data.msg){
+                document.querySelector('#telefone').textContent = response.data.telefone;
+                document.querySelector('#identificao').textContent = response.data.identificacao;
+                document.querySelector('#destino').textContent = response.data.destinoRegiao;
+                return 0;
+            }
+            _('eerrr');
+            return 0;
         });
     }
 

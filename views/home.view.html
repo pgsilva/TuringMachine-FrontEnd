@@ -22,20 +22,24 @@
 
 </div>
 <!-- //// -->
+<h4 id="tam"></h4>
 <div class="container">
-    <div ng-repeat='response in responses'>
-        <div class="row">
-            <div class="col-12"> <br></div>
+<div class="row">
+    <div class="col-12"> <br></div>
+</div>
+   <div class="row">
+<div class="col-12-2"></div>
+<div class="col-12-8 mx-auto card">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 id="msg"class="card-title">Não houve validacao</h5>
+            <h6 id='telefone' class="card-subtitle mb-2 text-muted"></h6>
+            <h6 id='identificao' class="card-subtitle mb-2 text-muted"></h6>
+            <p id='destino'class="card-text"></p>
         </div>
-        <div class="row">
-            <div class="col-12-2"></div>
-            <div class="col-12-8 mx-auto card" style="width: 18rem;">
-                <div ng-controller="homeController" class="card-body">
-                    {{response}}dsds
-                </div>
-            </div>
-            <div class="col-12-2"></div>
-        </div>
-
     </div>
+</div>
+
+<div class="col-12-2"></div>
+   </div>
 </div>

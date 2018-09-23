@@ -7,10 +7,19 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: '/',
             views: {
                 "body": {
-                    templateUrl: './views/home.controller.html',
+                    templateUrl: './views/home.view.html',
                     controller: 'homeController'
                 },
-                "navbar": { templateUrl: './views/navbar.view.html' }
+                "navbar": { templateUrl: '../views/navbar.view.html' }
+            }
+        }).state('Teste', {
+            url: '/teste',
+            views: {
+                "body": {
+                    templateUrl: './views/teste.view.html',
+                    controller: 'testeController'
+                },
+                "navbar": { templateUrl: '../views/navbar.view.html' }
             }
         });
 
