@@ -1,0 +1,60 @@
+{   
+    "celulas":[
+        {"indice":0,
+        "estado":"0",
+        "direcao":"DIREITA"},
+        {
+            "indice": 0,
+            "estado": "0",
+            "direcao": "DIREITA"
+        },
+        {
+            "indice": 0,
+            "estado": "0",
+            "direcao": "DIREITA"
+        },
+        {
+            "indice": 0,
+            "estado": "0",
+            "direcao": "DIREITA"
+        },
+        {
+            "indice": 0,
+            "estado": "0",
+            "direcao": "DIREITA"
+        },
+        {
+            "indice": 0,
+            "estado": "0",
+            "direcao": "DIREITA"
+        },
+        {
+            "indice": 0,
+            "estado": "0",
+            "direcao": "DIREITA"
+        },
+        {
+            "indice": 0,
+            "estado": "0",
+            "direcao": "DIREITA"
+        },
+        {
+            "indice": 0,
+            "estado": "0",
+            "direcao": "DIREITA"
+        },
+        {
+            "indice": 0,
+            "estado": "0",
+            "direcao": "DIREITA"
+        },
+        {
+            "indice": 0,
+            "estado": "0",
+            "direcao": "DIREITA"
+        }
+
+    ],
+    "indice":0
+
+}
