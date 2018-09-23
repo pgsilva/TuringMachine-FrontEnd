@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12"> <br></div>
+    </div>
+    <div class="row">
+        <div class="col-12-2"></div>
+        <div class="col-12-8 mx-auto card" style="width: 18rem;">
+            <div ng-controller="homeController" class="card-body">
+                <div class="alert alert-primary" role="alert">
+                    <h5 class="card-title">Insira abaixo Numero para ser validado</h5>
+                </div>
+                <input id="NumeroTel" type="text" ng-model="tell" class="form-control" placeholder="Numero de Telefone">
+                <br>
+                <button type="button" class="btn btn-primary btn-lg btn-block" ng-click="imprime()">Validar
+                </button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" ng-click="respose()">Response
+                </button>
+            </div>
+        </div>
+        <div class="col-12-2"></div>
+    </div>
+
+</div>
+<!-- //// -->
+<div class="container">
+    <div ng-repeat='response in responses'>
+        <div class="row">
+            <div class="col-12"> <br></div>
+        </div>
+        <div class="row">
+            <div class="col-12-2"></div>
+            <div class="col-12-8 mx-auto card" style="width: 18rem;">
+                <div ng-controller="homeController" class="card-body">
+                    {{response}}dsds
+                </div>
+            </div>
+            <div class="col-12-2"></div>
+        </div>
+
+    </div>
+</div>

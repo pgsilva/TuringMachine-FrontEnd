@@ -11,6 +11,7 @@ app.controller('homeController',['$http','$scope',($http,$scope)=>{
         $scope.geraJson($scope.tell);
         $scope.json2send = jsonP($scope.celulas,0);
         $scope.enviaJson();
+        _($scope.json2send);
         $scope.celulas =[];
         $scope.json2send ='';
         $scope.show=true;
@@ -22,6 +23,15 @@ app.controller('homeController',['$http','$scope',($http,$scope)=>{
             let celula =  celulaP(spread[1],spread[0],'DIREITA');
             $scope.celulas.push(celula);
         });
+        _($scope.celulas.length)
+        _(11-$scope.celulas.length)
+        if($scope.celulas.length<11){
+            let takeOff = 11 - $scope.celulas.length;
+            let tam = $scope.celulas.length;
+            for (let index = 0; index < takeOff; index++) {
+                $scope.celulas.push(celulaP(tam + index, "",'DIREITA'));  
+            }
+        }
     }
     
     $scope.enviaJson = ()=>{
